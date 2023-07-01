@@ -1,0 +1,25 @@
+<svg id="Gruppe_107" data-name="Gruppe 107" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1319" viewBox="0 0 1920 1319" class="divider-gradient">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_30" data-name="Rechteck 30" width="1920" height="1319" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#AFCA0B" stop-opacity="0"/>
+      <stop offset="1" stop-color="#AFCA0B"/>
+      <stop offset="1" stop-color="#AFCA0B"/>
+      <stop offset="1" stop-color="#AFCA0B"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#007C67" stop-opacity="0"/>
+      <stop offset="1" stop-color="#007C67"/>
+    </linearGradient>
+  </defs>
+  <g id="Komponente_3_8" data-name="Komponente 3 – 8">
+    <g id="Gruppe_maskieren_1" data-name="Gruppe maskieren 1" clip-path="url(#clip-path)">
+      <g id="Gruppe_50" data-name="Gruppe 50" transform="translate(-1175.023 0)" opacity="0.7" style="isolation: isolate">
+        <rect id="Rechteck_26" data-name="Rechteck 26" width="3600" height="700" transform="matrix(0.985, 0.174, -0.174, 0.985, 121.554, 0)" fill="url(#linear-gradient)"/>
+        <rect id="Rechteck_27" data-name="Rechteck 27" width="3600" height="699.999" transform="matrix(0.985, -0.174, 0.174, 0.985, 21.185, 629.823)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c9ab568-5c64-4bbe-992b-1077a18ed1f5" name="DEV|buerodoering.gotypo.de">
+        <fileTransfer rootFolder="/public_html/buerodoering.gotypo.de" accessType="SFTP" host="www239.your-server.de" port="22" sshConfigId="770e2135-6dc4-4dd4-a613-5e35cd8b091d" sshConfig="gotypo@www239.your-server.de:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="7ae70956-e694-445b-ab0b-a7faa0590020" name="PROD|buero-doering.de" url="http://w01264ca.kasserver.com">
+        <fileTransfer rootFolder="/buero-doering.de" host="w01264ca.kasserver.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

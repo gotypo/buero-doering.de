@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1517.96" style="enable-background:new 0 0 1920 1517.96;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_00000149370858984584345240000016817006269290072218_);fill:url(#Rechteck_26_00000145779480067105123130000011226654675517977760_);}
+	
+		.st1{clip-path:url(#SVGID_00000149370858984584345240000016817006269290072218_);fill:url(#Rechteck_27_00000145760394733518258750000007403760891401831607_);}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="-86.83" width="1920" height="1604.79"/>
+	</defs>
+	<clipPath id="SVGID_00000148633956029330888960000000242128382879669154_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="Rechteck_26_00000102539658039338846930000005320838693524442019_" gradientUnits="userSpaceOnUse" x1="277.4041" y1="1099.6887" x2="277.4041" y2="1098.6887" gradientTransform="matrix(3546 626.4 121.8 -689.5 -1116897.375 584695.875)">
+      <stop offset="0" stop-color="#0dc5fb" stop-opacity="0"/>
+			<stop offset="1" stop-color="#002c4c"/>
+			<stop offset="1" stop-color="#623493"/>
+			<stop offset="1" stop-color="#72187f"/>
+	</linearGradient>
+	
+		<polygon id="Rechteck_26_00000143619174490651999250000002116679264218841743_" style="clip-path:url(#SVGID_00000148633956029330888960000000242128382879669154_);fill:url(#Rechteck_26_00000102539658039338846930000005320838693524442019_);" points="
+		-1053.47,-86.83 2492.53,539.57 2370.73,1229.07 -1175.27,602.67 	"/>
+	
+		<linearGradient id="Rechteck_27_00000063628776771078436990000005638735125609443505_" gradientUnits="userSpaceOnUse" x1="277.4444" y1="1099.8264" x2="277.4444" y2="1098.8264" gradientTransform="matrix(3546 -626.4 -121.7998 -689.499 -849240.1875 932350.25)">
+      <stop offset="0" stop-color="#0dc5fb" stop-opacity="0"/>
+			<stop offset="1" stop-color="#ff6b5d"/>
+	</linearGradient>
+	
+		<polygon id="Rechteck_27_00000010311333886966774350000001293186257094052760_" style="clip-path:url(#SVGID_00000148633956029330888960000000242128382879669154_);fill:url(#Rechteck_27_00000063628776771078436990000005638735125609443505_);" points="
+		-1153.84,542.99 2392.16,-83.41 2513.96,606.09 -1032.04,1232.49 	"/>
+</g>
+</svg>
