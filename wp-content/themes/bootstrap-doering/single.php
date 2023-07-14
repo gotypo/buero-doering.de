@@ -56,8 +56,8 @@ function get_single() {
     $out .= '<div class="col-md-9">';
     $out .= '<h1>'.$loop->post->post_title.'</h1>';
     $out .= '</div>';
+    $out .= '<div class="col-md-3">';
 
-    $out .= '<div class="col-md-3">';   
     $out .= '<div class="author-info py-3 '.$categoryClasses.'">';
     $out .= '<h3 class="writtenBy w-100">von:</h3>';
     $out .= '<img src="'.$avatarSrc.'" width="80" height="80" class="avatar rounded-circle " alt="'.$display_name.'" />';

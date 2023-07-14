@@ -808,14 +808,22 @@ table:not(.table-condensed) td:after {content: ""; position: absolute; bottom: 0
 .single-post  footer#footer {background-color: #222 !important; padding: 50px 0; z-index: 198; overflow:visible; position: relative;}
 
 /*EVENTS*/
+.element-eventswiper {position: relative;}
 .element-eventswiper .eventswiper {position: relative; overflow: hidden; margin-top: 3rem; margin-bottom: 3rem;}
 .element-eventswiper  .swiper-button-prev {left: -2rem;}
 .element-eventswiper  .swiper-button-next {right: -2rem;}
+.element-eventswiper  .date-element .day {font-size: 120px;}
+.element-eventswiper  .date-element .rotate-90 {top: -10px;}
+
 .element-eventswiper .eventswiper .event-content {padding-top: 10rem;}
 .element-eventswiper .eventswiper .event-content .event-title {margin-top: 1.5rem;}
+.element-eventswiper .eventswiper .event-content .event-datestring {color: var(--primary-color); color: #ffffff; text-transform: uppercase; font-weight: 500;}
 .element-eventswiper .eventswiper .event-content .btn {margin-top: 3rem;}
 .element-eventswiper .eventswiper .event-divider {height: 4rem; width: 100%; position: relative;}
 .element-eventswiper .eventswiper .event-divider:after {content: ""; position: absolute; left: 0; top: 0; height: 7px; width: 100%; transform: skew(-12deg, -12deg); background-color:var(--secondary-color); }
+
+.eventswiper-navigation-wrapper {position: absolute; top: calc(50% + 80px); left:0; width: 100%;}
+.eventswiper-navigation-wrapper .container {position: relative;}
 
 /*SCHEDULE*/
 .schedule {position: relative; margin: 100px 0;}
@@ -1396,6 +1404,10 @@ footer#footer .menu-footermenue-container a {
 
     #content.site-content {padding-left: 50px; padding-right: 50px;}
 
+    .element-eventswiper .eventswiper {padding: 0 3rem; }
+    .element-eventswiper  .swiper-button-prev {left: 0;}
+    .element-eventswiper  .swiper-button-next {right: 0;}
+
     textarea.form-control {max-height: 200px;}
     .linkbuttons a, .btn {padding-top: 10px; padding-bottom: 10px;}
 
@@ -1595,6 +1607,8 @@ footer#footer .menu-footermenue-container a {
     .element-lineup .row > div:nth-of-type(15) {margin-top: 7%;}
     .element-lineup .row > div:nth-of-type(16) {margin-top: -2%;}
 
+    .element-eventswiper .swiper-button-prev {left: 10px;}
+    .element-eventswiper .swiper-button-next {right: 10px;}
 
     /* FOOTER */
     .site-container > .site-inner {padding: 100px 0 20vh 0;}
@@ -1679,6 +1693,11 @@ footer#footer .menu-footermenue-container a {
 
     /*.element-sponsorswiper .swiper-button-next,*/
     /*.element-sponsorswiper .swiper-button-prev {display: none;}*/
+
+    .element-eventswiper .eventswiper {padding: 0;}
+    .element-eventswiper .eventswiper .event-content {padding-top: 13rem;}
+    .element-eventswiper .eventswiper .event-inner {position: relative; padding: 0 6rem;}
+    .element-eventswiper .eventswiper .event-inner .date-element-wrapper {position: relative;}
 
     .element-sponsorswiper .sponsorswiper {overflow: hidden;}
 
@@ -1832,6 +1851,7 @@ footer#footer .menu-footermenue-container a {
     #offcanvasWithContactForm .offcanvas-header {padding: 2rem 1rem 1rem 1rem;}
     #offcanvasWithContactForm.offcanvas-start .offcanvas-body {display: block;}
 
+
     /* CONTENT */
     .page-id-19896 #keyvisual {min-height: 300px; }
 
@@ -1874,7 +1894,9 @@ footer#footer .menu-footermenue-container a {
 
     .klaro .cookie-modal .cm-modal.cm-klaro {padding: 200px 0 2rem 0;}
 
-	/* FOOTER */
+    .element-eventswiper .eventswiper .event-inner {position: relative; padding: 0 3rem;}
+
+    /* FOOTER */
     footer#footer .col-xs-6 {padding-bottom: 30px; text-align: center;}
 
 }
@@ -1888,7 +1910,7 @@ footer#footer .menu-footermenue-container a {
     #keyvisual h1 {font-size: 40px;}
 
     /* CONTENT */
-    .services .services-gradient {background-size: cover; width: calc(100% - 40px); overflow: hidden;}
+    .services .services-gradient {background-size: cover; width: 100%; overflow: hidden;}
 
     .element-schedule .schedule-body ul {padding-left: 45px;}
     .element-schedule .schedule-body ul ul {padding-left: 5px; font-size: 16px;}

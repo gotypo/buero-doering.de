@@ -257,7 +257,7 @@ jQuery(function( $ ){
                         },
                         574: {
                             spaceBetween: 30,
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                         },
                         768: {
                             spaceBetween: 50,

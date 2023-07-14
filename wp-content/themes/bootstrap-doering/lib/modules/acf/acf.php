@@ -785,14 +785,16 @@ function eventslider_acf_block_render_callback( $block ) {
         $out .= '<div class="swiper-wrapper">';
 
         foreach ($events as $event) {
+            $archive_date = $event['archive_date'];
             $day = $event['date_start'];
             $monthFull = date('F', strtotime($day));
             $shortDate = substr($monthFull, 0, 3);
 
-            $out .= '<div class="swiper-slide">';
-            $out .= '<div class="event-inner">';
+            if($archive_date > date("Ymd")) {
+                $out .= '<div class="swiper-slide">';
+                $out .= '<div class="event-inner">';
 
-            $out .= '<div class="date-element-wrapper">
+                $out .= '<div class="date-element-wrapper">
                         <div class="date-element">
                             <span class="day">'.date('d', strtotime($day)).'</span>
                             <div class="rotate-90">
@@ -802,29 +804,31 @@ function eventslider_acf_block_render_callback( $block ) {
                         </div>
                     </div>';
 
-            $out .= '<div class="event-content">';
-            $out .= '<div class="event-divider"></div>';
-            $out .= '<h3 class="event-title">'.$event['title'].'</h3>';
-            $out .= '<div class="event-description small">'.$event['description'].'</div>';
+                $out .= '<div class="event-content">';
+                $out .= '<div class="event-divider"></div>';
+                $out .= '<div class="event-datestring">'.$event['datestring'].'</div>';
+                if($event['link']) {
+                    $out .= '<a href="'.$event['link'].'" class="" title="mehr erfahren">';
+                }
+                $out .= '<h3 class="event-title">'.$event['title'].'</h3>';
+                if($event['link']) {
+                    $out .= '</a>';
+                }
+                $out .= '<div class="event-description small">'.$event['description'].'</div>';
 
-            if($event['link']) {
-                $out .= '<a href="'.$event['link'].'" class="btn" title="mehr erfahren">mehr</a>';
+                $out .= '</div>';
+                $out .= '</div>';
+                $out .= '</div>';
             }
-
-            $out .= '</div>';
-            $out .= '</div>';
-            $out .= '</div>';
         }
 
-        $out .= '</div>';
-        $out .= '</div>';
-        $out .= '</div>';
+    $out .= '</div>';
+    $out .= '</div>';
 
         if (count($events)>1) {
-            $out .= '<div class="swiper-button-prev swiper-button-prev-event"></div><div class="swiper-button-next swiper-button-next-event"></div>';
+            $out .= '<div class="eventswiper-navigation-wrapper"><div class="container"><div class="swiper-button-prev swiper-button-prev-event"></div><div class="swiper-button-next swiper-button-next-event"></div></div></div>';
         }
-
-
+    $out .= '</div>';
     $out .= '</div>';
 
     }
