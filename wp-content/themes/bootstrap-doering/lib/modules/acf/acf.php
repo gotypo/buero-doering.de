@@ -652,7 +652,7 @@ function linkbutton_acf_block_render_callback( $block ) {
     }
 
     if (is_admin() ) {
-        $out = '<a href="'.$buttonLink["url"].'">'.$buttonText.'</a>';
+        $out = '<h1>Linkbutton</h1>';
     } else {
         $out = '<div class="element-gutenberg waypoint-marker element-linkbutton">';
         $out .= '<a href="'.$buttonLink["url"].'" class="btn" '.$target.'>';
