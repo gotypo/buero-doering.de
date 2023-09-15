@@ -638,29 +638,30 @@ function linkbutton_acf_init() {
     }
 }
 
-function linkbutton_acf_block_render_callback( $block ) {
-
-    $slug = str_replace('acf/', '', $block['name']);
-    $align = $block['align'];
+function linkbutton_acf_block_render_callback( ) {
 
     $buttonText = get_field('buttontext');
     $buttonLink = get_field('buttonlink');
     $buttonIcon = get_field('buttonicon');
 
-    if ($buttonLink["target"]) {
-        $target = 'target="'.$buttonLink["target"].'"';
-    }
 
     if (is_admin() ) {
         $out = '<h1>Linkbutton</h1>';
     } else {
-        $out = '<div class="element-gutenberg waypoint-marker element-linkbutton">';
-        $out .= '<a href="'.$buttonLink["url"].'" class="btn" '.$target.'>';
-        if(($buttonIcon) && ($buttonIcon != 'none')) {
-            $out .= '<span class="material-symbols-outlined">'.$buttonIcon.'</span>';
+        if($buttonText && $buttonLink && $buttonIcon) {
+
+            if ($buttonLink["target"]) {
+                $target = 'target="'.$buttonLink["target"].'"';
+            }
+
+            $out = '<div class="element-gutenberg waypoint-marker element-linkbutton">';
+            $out .= '<a href="'.$buttonLink["url"].'" class="btn" '.$target.'>';
+            if(($buttonIcon) && ($buttonIcon != 'none')) {
+                $out .= '<span class="material-symbols-outlined">'.$buttonIcon.'</span>';
+            }
+            $out .= '<span>'.$buttonText.'</span></a>';
+            $out .= '</div>';
         }
-        $out .= '<span>'.$buttonText.'</span></a>';
-        $out .= '</div>';
     }
 
     echo $out;
